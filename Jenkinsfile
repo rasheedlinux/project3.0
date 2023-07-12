@@ -1,12 +1,9 @@
 /* @Library('my-shared-library') _ */
 
 pipeline{
-
-    agent any
-
-   
-         
-        stage('Git Checkout'){
+ agent any
+    stages{
+     stage('Git Checkout'){
                   /* when { expression {  params.action == 'create' } } */
             steps{
             gitCheckout(
@@ -16,3 +13,4 @@ pipeline{
             }
         }
          }
+}
