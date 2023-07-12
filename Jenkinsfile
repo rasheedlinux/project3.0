@@ -4,7 +4,7 @@ pipeline{
 
     agent any
 
-    stages{
+   
          
         stage('Git Checkout'){
                   /* when { expression {  params.action == 'create' } } */
@@ -15,6 +15,4 @@ pipeline{
             )
             }
         }
-         
-}
-}
+         }
